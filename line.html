@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>DSBA5122 d3 mouse example</title>
+    <script src=src="js/d3.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/line2.css">
+</head>
+<body>
+<div id="line"></div>
+<script src="src/line3.js"></script>
+Y-Axis:
+<select onchange="changeYAxis(this.value);">
+    <option value="count">Weight</option>
+    <option value="pop">MPG</option>
+</select>
+
+<script>
+    function changeYAxis(val){
+        console.log(val);
+        var label = "";
+        yValue = val;
+        var color;
+        if(val == "pop")
+        {
+            label = "MPG";
+            color = "red";
+        }
+        else
+        {
+            label = "Weight";
+            color = "steelblue";
+        }
+        y.domain(d3.extent(new_data, function(d) { return d[yValue]; }));
+        svg.selectAll(".y.axis").call(yAxis).select(".label").text(label);
+        svg.selectAll(".line")
+            .transition()
+            .duration(500)
+            .attr("d", line).style("stroke", color);
+
+        focus.select(".tooltip").style("fill", color).style("stroke", color);
+    }
+</script>
+
+</body>
+</html>

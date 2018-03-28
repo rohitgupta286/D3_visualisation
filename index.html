@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visual Analytics Final Project</title>
+    <link rel="stylesheet" type="text/css" href="css/layout6.css">
+    <link rel="stylesheet" type="text/css" href="css/pie.css">
+    <link rel="stylesheet" type="text/css" href="css/div.css">
+    <script src="js/d3.js"></script>
+    <script src="src/parcoords.js"></script>
+    <script src="src/parallel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/parcoords.css">
+    <script src="src/piechart.js"></script>
+    <script src="src/barchart_fun1_new.js"></script>
+
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <div id = "main_heading">
+    <h1> VINTAGE CARS - 1970-82 DASHBOARD</h1>
+    </div>
+</head>
+<body>
+<div id="left">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <div id = pie_plot_text>
+        <h1>Cars by Origin</h1>
+    <div id="pie_plot"></div>
+
+        </div>
+
+</div>
+
+<div id="right">
+    <div id="bar_chart_text">
+        <h1>Manufacturer and Count by Origin</h1>
+    </div>
+    <div id="bar_chart"></div>
+
+
+
+
+
+
+</div>
+
+<div id="below">
+        <div id ="wiki_heading">
+            <h1>MANUFACTURER WIKI INFO</h1>
+        </div>
+
+        <iframe id ="showskill" src="" width="1500" height="400" float="left"></iframe>
+
+
+    <div id ="parallel_plot_2">
+        <h1>PARALLEL CORDINATES PLOT</h1>
+    </div>
+    <iframe id ="example" src="parallel_plot.html" width="1500" height="800" float="left"></iframe>
+<!--<div id="example" class="parcoords" style="width:470px;height:500px"></div>!-->
+    <iframe id ="left_scatter" src="layout6.html" float="left"></iframe>
+
+    <iframe id ="right_MPG" src="final_try.html" float="right"></iframe>
+    <iframe id ="right_MPG" src="test.html" float="right"></iframe>
+}
+    };
+</div>
+<script>
+
+
+    piechart();
+    barChart();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view coordination</title>
+    <link rel="stylesheet" type="text/css" href="css/layout6.css">
+    <script src="js/d3.js"></script>
+    <script src="src/scatterplot_fun1.js"></script>
+    <script src="src/barchart_fun1.js"></script>
+</head>
+<body>
+<div id="left_scatter">
+    <div id="scatter_plot_text">
+        <h1>Scatter Plot to Analyze MPG Dataset</h1>
+    </div>
+    <div id="scatter_plot"></div>
+
+    X-Axis:
+    <select onchange="changeXAxis(this.value);">
+        <option value="MPG">MPG</option>
+        <option value="Weight">Weight</option>
+        <option value="Horsepower" selected>Horsepower</option>
+    </select>
+    Y-Axis:
+    <select onchange="changeYAxis();" id="yAxisMenu">
+        <option value="MPG" selected>MPG</option>
+        <option value="Weight">Weight</option>
+        <option value="Horsepower">Horsepower</option>
+    </select>
+    </div>
+</div>
+
+<!--<div id="right">
+    <div id="bar_chart"></div>
+    <div>
+    <button type="button" onclick="sort_fun();">Sort!</button>
+    </div>
+</div>!-->
+<script>
+    scatterPlot();
+    barChart();
+</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 11px sans-serif;
+
+}
+
+#left{
+    width:705px;
+    height:500px;
+    float:left;
+    border-style: groove;
+    border-color: #B1BADF;
+    padding-left:3px;
+}
+#right{
+    width:800px;
+    height:500px;
+    float:right;
+    border-style:solid;
+}
+#below{
+    width:1500px;
+    height:500px;
+    background:gray;
+    float:left;
+
+}
+#scatter_plot{
+    width:600px;
+}
+#bar_chart{
+    width:50%;
+}
+
+.bar {
+    fill: rgba(181, 63, 176, 0.45);
+}
+
+.axis {
+    font: 10px sans-serif;
+}
+
+#bar_chart .axis path,
+#bar_chart .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#bar_chart .x.axis path {
+    display: none;
+}
+
+#bar_chart .bar text {
+    fill: white;
+    font: 12px sans-serif;
+}
+
+
+
+#scatter_plot .axis path,
+#scatter_plot .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#scatter_plot .dot {
+    stroke: #000;
+}
+
+
+#scatter_plot .tooltip {
+    position: absolute;
+    width: 200px;
+    height: 28px;
+    pointer-events: none;
+}
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+.d3-tip.n:after {
+    margin: -1px;
+    top: 100%;
+    left: 0;
+}
+#main_heading{
+    text-align: center;
+    background-color: burlywood;
+    border-style: double;
+    font-size: medium;
+
+}
+#wiki_heading{
+    text-align: center;
+    background-color: lavenderblush;
+    border-style: double;
+    font-size: x-small;
+}
+
+#parallel_plot_2{
+    text-align: center;
+    background-color: lavenderblush;
+    border-style: double;
+    font-size: x-small;
+}
+#below{
+    border-style: double;
+}
+#pie_plot_text{
+    text-align: center;
+
+}
+#bar_chart_text{
+    text-align: center;
+}
+#scatter_plot_text{
+    width: 560px;
+    text-align: center;
+
+}
+#left_scatter{
+    width:630px;
+    height:700px;
+    float:left;
+
+}
+#right_MPG{
+    width:860px;
+    height:350px;
+    float:right;
+}
