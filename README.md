@@ -2,8 +2,8 @@
 
 CARS Dataset visualization
 
--Parallel Cordinates Plot
--Iframe wiki on click of the Car name
+- Parallel Cordinates Plot
+- Iframe wiki on click of the Car name
 
 Use Technologies:
 
